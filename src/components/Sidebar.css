@@ -1,0 +1,46 @@
+/* Estilos básicos para el Sidebar */
+.sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-container {
+  background-color: #444;
+  color: white;
+  width: 250px;
+  height: 100vh;
+  position: fixed; /* Fijado para mantenerse en su posición */
+  left: 0;
+  top: 0;
+  padding: 1em;
+  z-index: 2; /* Asegurar que el Sidebar esté siempre encima */
+  box-sizing: border-box;
+}
+
+/* Estilo para la lista de navegación */
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Asegurarse de que no haya margen alrededor de la lista */
+}
+
+.sidebar-listItem {
+  margin: 1em 0;
+}
+
+.sidebar-listIcon {
+  margin-right: 0.5em;
+}
+
+.theme-toggle {
+  margin-top: 100px;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+/* Contenido principal */
+.main-content {
+  margin-left: 250px; /* Asegura que el contenido no esté sobre el sidebar */
+  padding: 20px;
+  box-sizing: border-box;
+}
